@@ -1,1 +1,70 @@
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  }
 
+.body {
+  color: white;
+  background: linear-gradient(315deg, #6200ff, orange);
+  background-attachment: fixed; /** This makes it so there's no banding **/
+  margin: 0px;
+}
+
+.rickroll_button {
+  color: orange;
+  background-color: rgba(0, 0, 0, .1);
+  outline: 2px solid orange;
+}
+
+.useless_input_field {
+  margin: auto;
+  display: flex;
+  outline: 2px solid orange;
+  background-color: rgba(0, 0, 0, .1);
+  color: orange;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.3);
+  color:white;
+  text-decoration: none;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav_logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.nav_menu {
+  color: white;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 20px;
+}
+
+.nav_menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav_menu a:hover {
+  color: orange;
+}
