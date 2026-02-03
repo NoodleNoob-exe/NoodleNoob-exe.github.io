@@ -11,13 +11,29 @@
             background-color: rgba(0, 0, 0, 0.3);
             border-radius: 10px;
         }
+
+        .body {
+            color: white;
+            background: linear-gradient(315deg, #6200ff, orange);
+            background-attachment: fixed; &lt;!-- This makes it so the gradient can be at any angle without banding --&gt;
+        }
+
+        .rickroll_button {
+            color: orange;
+            background-color: rgba(0, 0, 0, .1);
+            outline: 2px solid orange;
+        }
+
+        .useless_input_field {
+            margin: auto;
+            display: flex;
+            outline: 2px solid orange;
+            background-color: rgba(0, 0, 0, .1);
+            color: orange;
+        }
     </style>
 </head>
-<body style="
-    color: white;
-    background: linear-gradient(315deg, #6200ff, orange);
-    background-attachment: fixed; &lt;!-- This makes it so the gradient can be at any angle without banding --&gt;
-">
+<body class="body">
     <div class="container">
         <h1>This website is in the making.</h1>
         <p>I am currently in the process of learning web development, so don't expect anything to look pretty.</p>
@@ -27,27 +43,16 @@
         <p>Testing 1 2 3... Testing 1 2 3...</p>
         <p>Update: The gradient works! Thank you dev tools!</p>
     </div>
-    <div class="container" style="
-    text-align: center;
-">
+    <div class="container" style="text-align: center;">
         <a href="https://youtu.be/dQw4w9WgXcQ" style="color: orange;">Test Link</a>
         <a href="https://noodlenoob-exe.github.io/notarickroll/" style="color: orange;">Other Page</a>
     </div>
     <div class="container" style="text-align: center;">
-        <button onclick="window.open('https://youtu.be/dQw4w9WgXcQ')" style="
-    color: orange;
-    background-color: rgba(0, 0, 0, .1);
-    outline: 2px solid orange;
-">Test Button</button>
+        <button class="rickroll_button" onclick="window.open('https://youtu.be/dQw4w9WgXcQ')">Test Button</button>
     </div>
     <div class="container">
-        <input type="text" placeholder="This input field does nothing :I" style="
-    margin: auto;
-    display: flex;
-    outline: 2px solid orange;
-    background-color: rgba(0, 0, 0, .1);
-    color: orange;
-">
+        <input class="useless_input_field" type="text" placeholder="This input field does nothing :I">
     </div>
+
 </body>
 </html>
