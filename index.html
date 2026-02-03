@@ -1,7 +1,7 @@
 <!DOCTYPE=html>
 <html lang="en">
 <head>
-    <title>Test Website</title>
+    <title>Gud4Nothing</title>
     <style>
         .container {
             width: 80%;
@@ -15,7 +15,8 @@
         .body {
             color: white;
             background: linear-gradient(315deg, #6200ff, orange);
-            background-attachment: fixed; &lt;!-- This makes it so the gradient can be at any angle without banding --&gt;
+            background-attachment: fixed; /** This makes it so there's no banding **/
+            margin: 0px;
         }
 
         .rickroll_button {
@@ -31,9 +32,60 @@
             background-color: rgba(0, 0, 0, .1);
             color: orange;
         }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.3);
+            color:white;
+            text-decoration: none;
+            width: 100%;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .nav_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .nav_logo {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+        .nav_menu {
+            color: white;
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 20px;
+        }
+
+        .nav_menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav_menu a:hover {
+            color: orange;
+        }
     </style>
 </head>
 <body class="body">
+    <nav class="navbar">
+        <div class="nav_container">
+            <a href="https://noodlenoob-exe.github.io" class="nav_logo">Gud4Nothing</a>
+            <ul class="nav_menu">
+                <li><a href="https://noodlenoob-exe.github.io">Home</a></li>
+                <li><a href="otherpage">Other Page</a></li>
+        </div>
+     </ul>
+</nav>
+    
     <div class="container">
         <h1>This website is in the making.</h1>
         <p>I am currently in the process of learning web development, so don't expect anything to look pretty.</p>
@@ -45,7 +97,7 @@
     </div>
     <div class="container" style="text-align: center;">
         <a href="https://youtu.be/dQw4w9WgXcQ" style="color: orange;">Test Link</a>
-        <a href="https://noodlenoob-exe.github.io/notarickroll/" style="color: orange;">Other Page</a>
+        <a href="otherpage" style="color: orange;">Other Page</a>
     </div>
     <div class="container" style="text-align: center;">
         <button class="rickroll_button" onclick="window.open('https://youtu.be/dQw4w9WgXcQ')">Test Button</button>
@@ -53,6 +105,5 @@
     <div class="container">
         <input class="useless_input_field" type="text" placeholder="This input field does nothing :I">
     </div>
-
 </body>
 </html>
