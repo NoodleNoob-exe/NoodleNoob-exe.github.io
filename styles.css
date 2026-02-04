@@ -21,6 +21,13 @@
   margin: 0px;
 }
 
+.body_HTWYT {
+  color: white;
+  background: linear-gradient(315deg, orange, pink);
+  background-attachment: fixed;
+  margin: 0px;
+}
+
 .rickroll_button {
   color: orange;
   background-color: rgba(0, 0, 0, .1);
