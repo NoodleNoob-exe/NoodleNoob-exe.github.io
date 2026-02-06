@@ -41,14 +41,6 @@
   letter-spacing: 0.02px;
 }
 
-.useless_input_field {
-  margin: auto;
-  display: flex;
-  outline: 2px solid orange;
-  background-color: rgba(0, 0, 0, .1);
-  color: orange;
-}
-
 .navbar {
   background: rgba(0, 0, 0, 0.3);
   color:white;
